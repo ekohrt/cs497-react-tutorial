@@ -1,0 +1,24 @@
+.card-title {
+    /* padding-bottom: 100%;  */
+    /* margin-bottom: -100%; */
+  }
+
+/* .card-text {
+    width: 100%;
+    flex: 1; 
+    padding: 1em;
+    padding-bottom: 100%; 
+    margin-bottom: -100%;
+  }
+*/
+.card-body {
+    /* object-fit: flex;
+    flex: 1; 
+    padding: 1em; */
+    /* padding-bottom: 100%;  */
+    /* margin-bottom: -100%; */
+}
+
+.line-thing {
+    /* height: 50%; */
+}

@@ -1,8 +1,16 @@
 import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import CourseList from './components/CourseList.jsx'
-import Banner from './components/Banner'
+import CourseList from './components/CourseList.jsx';
+import Banner from './components/Banner.jsx';
+import CourseCard from './components/CourseCard.jsx';
+import CardGrid from './components/CardGrid.jsx';
+import './components/CardGrid.css';
+import './components/CourseCard.css';
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const schedule = {
   "title": "CS Courses for 2018-2019",
@@ -34,13 +42,15 @@ const schedule = {
   }
 };
 
+
+
 const App = () => {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      { Banner(schedule.title) }
-      { CourseList(schedule.courses) }
+      <Banner title={schedule.title}/>
+      <CardGrid courses={schedule['courses']} />
     </div>
   );
 };
